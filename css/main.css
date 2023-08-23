@@ -80,6 +80,24 @@ em {
         margin-bottom: 3vh;
     }
 }
+@media (min-device-width: 1001px) and (max-device-width: 1200px) and (orientation: landscape) {
+    h1 {
+        margin-top: 2vh;
+        font-size: 15vh;
+    }
+    h2 {
+        font-size: 9vh;
+    
+    }
+    h3 {
+        font-size: 3vh;
+    }
+    p, a, li {
+        font-family: 'Quicksand', sans-serif;
+        font-size: 4.2vh;
+        margin-bottom: 3vh;
+    }
+}
 
 @media (max-width: 850px) {
     h1 {
@@ -115,8 +133,9 @@ em {
 .fishchowder {
     position: absolute;
     width: 60vw;
+    display: block;
     left: 20vw;
-    margin-top: 3vh;
+    margin-top: 5vh;
     transition: all 0.2s ease-in-out;
     z-index: 0;
 }
@@ -127,15 +146,22 @@ em {
 .title {
     width: 40vw;
     position: absolute;
+    display: block;
     left: 30vw;
     bottom: 0vh;
     z-index: 1;
 }
+.card {
+    position: absolute;
+    z-index: 20;
+    display: none;
+}
 
 @media (max-device-width: 500px) {
     .fishchowder {
-        padding-top: 25vh;
+        position: relative;
         width: 110vw;
+        margin-top: 40vh;
         left: 10vw;
     }
     .fishchowder:hover  {
@@ -143,10 +169,12 @@ em {
         width: 112vw;
     }
     .title {
-        top: 25vh;
+        top: 5vh;
+        position: relative;
         width: 110vw;
         left: 10vw;
     }
+    
 }
 
 
@@ -165,9 +193,6 @@ em {
         top: 80vh;
         width: 110vw;
         left: 10vw;
-    }
-    html {
-        overflow-x: hidden;
     }
 }
 
@@ -195,7 +220,7 @@ em {
     }
     .title {
         bottom: -30vh;
-        margin-left: 10vw;
+        margin-left: 15vw;
     }
 }
 @media  (max-device-width: 849px) and (orientation: landscape) {
@@ -219,7 +244,7 @@ em {
     .title {
         bottom: -30vh;
         width: 70vw;
-        margin-left: -5vw;
+        margin-left: 0vw;
     }
 }
 
@@ -228,8 +253,53 @@ em {
     background-image: url( /images/background-low-res.png);
 }
 
-.home-container {
-    overflow: hidden;
+
+@media (max-device-width: 500px) {
+    .home-container {
+        overflow: visible;
+    }
+    .card {
+        display: block;
+        position: relative;
+    }
 }
-
-
+@media (min-device-width: 501px) and (max-device-width: 850px){
+    .home-container {
+        overflow: visible;
+    }
+    .card {
+        display: block;
+        position: relative;
+        bottom: -100vh;
+    }
+}
+    @media (min-device-width: 1001px) and (max-device-width: 1200px) and (orientation: landscape) {
+        .home-container {
+            overflow: visible;
+        }
+        .card {
+            display: block;
+            position: relative;
+            bottom: -120vh;
+        }
+}
+@media  (max-device-width: 849px) and (orientation: landscape) {
+    .home-container {
+        overflow: visible;
+    }
+    .card {
+        display: block;
+        position: relative;
+        bottom: -120vh;
+    }
+}
+@media (min-device-width: 850px) and (max-device-width: 1000px) and (orientation: landscape) {
+    .home-container {
+        overflow: visible;
+    }
+    .card {
+        display: block;
+        position: relative;
+        bottom: -120vh;
+    }
+}

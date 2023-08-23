@@ -156,6 +156,19 @@
     }
     
 }
+@media (min-device-width: 1001px) and (max-device-width: 1200px) and (orientation: landscape) {
+    .page {
+        width: 85vw;
+        margin-left: 18vw;
+    }
+    .price-box {
+        width: 80vw;
+    }
+    .example {
+        width: 40vw;
+    }
+
+}
 
 .bottom-list, .bottom-list span a{
     padding-top: 5vh;
@@ -262,5 +275,14 @@
     .bottom-list {
         margin-top: -2vh;
         margin-bottom: 4vh;
+    }
+}
+@media (min-device-width: 1001px) and (max-device-width: 1200px) and (orientation: landscape) {
+    .artwork {
+        width: 80vw;
+    }
+    .bottom-list {
+        margin-top: -3vh;
+        margin-bottom: 5vh;
     }
 }
