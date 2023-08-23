@@ -132,6 +132,9 @@
     .example {
         width: 50vw;
     }
+    .progress-bar {
+        margin-bottom: 10vh;
+    }
 }
 
 @media (min-device-width: 501px) and (max-device-width: 850px){
