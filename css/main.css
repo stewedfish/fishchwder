@@ -149,6 +149,8 @@ em {
     }
 }
 
+
+
 @media (min-device-width: 501px) and (max-device-width: 850px){
     .fishchowder {
         padding-top: 8vh;
@@ -185,6 +187,41 @@ em {
 
 }
 
+@media (min-device-width: 850px) and (max-device-width: 1000px) and (orientation: landscape) {
+    .fishchowder {
+       bottom: -20vh;
+       width: 60vw;
+       margin-left: 15vw;
+    }
+    .title {
+        bottom: -30vh;
+        margin-left: 10vw;
+    }
+}
+@media  (max-device-width: 849px) and (orientation: landscape) {
+    .fishchowder {
+       bottom: -10vh;
+       width: 70vw;
+       margin-left: 25vw;
+    }
+    .title {
+        margin-top: 10vh;
+        margin-left: 20vw;
+        width: 70vw;
+    }
+}
+@media (min-device-width: 1001px) and (max-device-width: 1200px) and (orientation: landscape) {
+    .fishchowder {
+       bottom: 0vh;
+       width: 80vw;
+       margin-left: 5vw;
+    }
+    .title {
+        bottom: -30vh;
+        width: 70vw;
+        margin-left: -5vw;
+    }
+}
 
 /*background*/
 .background {
