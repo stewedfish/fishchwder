@@ -34,6 +34,13 @@
     }
 }
 
+@media (max-width: 850px) {
+    .page {
+        width: 80vw;
+    }
+    
+}
+
 /*commissions*/
 
 .h2-link {
@@ -138,7 +145,10 @@
 
 @media (max-width: 850px) {
     .price-box {
-        width: 60vw;
+        width: 70vw;
+    }
+    .example {
+        width: 40vw;
     }
     
 }
@@ -223,15 +233,30 @@
     .artwork {
         width: 100vw;
     }
+    .bottom-list {
+        margin-top: 0;
+        padding-top: -3vh;
+        margin-bottom: 7vh;
+    }
 }
 
 @media (min-device-width: 501px) and (max-device-width: 850px){
     .artwork {
         width: 100vw;
     }
+    .bottom-list {
+        margin-top: -4vh;
+        margin-bottom: 5vh;
+    }
     
 }
 
 @media (max-width: 850px) {
-    
+    .artwork {
+        width: 75vw;
+    }
+    .bottom-list {
+        margin-top: -2vh;
+        margin-bottom: 4vh;
+    }
 }
