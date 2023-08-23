@@ -34,13 +34,12 @@
         height: 20vh;
     }
     .nav-list h2 > a {
-    font-size: 12vw;
+    font-size: 10vw;
     }
     .nav-list h2 {
         padding-top: 6vh;
         margin-left: 0vw;
     }
-
 }
 
 @media (max-width: 850px) {

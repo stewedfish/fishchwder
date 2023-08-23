@@ -59,9 +59,6 @@ em {
         margin-bottom: 3vh;
         font-weight: 500;
     }
-    a {
-        font-weight: bold;
-    }
 
 }
 
@@ -166,6 +163,9 @@ em {
         top: 80vh;
         width: 110vw;
         left: 10vw;
+    }
+    html {
+        overflow-x: hidden;
     }
 }
 

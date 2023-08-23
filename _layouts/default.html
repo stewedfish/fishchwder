@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html class="background">
     {% include head.html %}
-    {% include nav-bar.html %}
+    <div class="noscroll-nav">    
+        {% include nav-bar.html %}
+    </div>
+
     <body class="home-page">
         {{ content }}
     </body>
