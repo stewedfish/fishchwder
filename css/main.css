@@ -1,0 +1,121 @@
+/* general styles */
+html {
+    overflow-x: hidden;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Gamja Flower', cursive;
+    color: rgb(81, 84, 101);
+    margin-bottom: 3vh;
+}
+h1 {
+    margin-top: 2vh;
+    font-size: 15vh;
+}
+h2 {
+    font-size: 10vh;
+
+}
+h3 {
+    font-size: 5vh;
+}
+p, a, li {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 5vh;
+    margin-bottom: 3vh;
+}
+p, li {
+    color: rgb(81, 84, 101);
+}
+a {
+    color: rgb(189, 79, 0);
+}
+a:hover {
+    color: rgb(81, 84, 101);
+}
+ul, li {
+    padding-left: 5vw;
+}
+em {
+    color: rgb(113, 115, 138);
+    font-style: normal;
+}
+
+
+/*PHONE SETTINGS*/
+@media (max-width: 800px) {
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Gamja Flower', cursive;
+        color: rgb(81, 84, 101);
+        margin-bottom: 3vw;
+    }
+    h1 {
+        font-size: 15vw;
+    }
+    h2 {
+        font-size: 10vw;
+    
+    }
+    h3 {
+        font: 5vw;
+    }
+    p, a, li {
+        font-family: 'Quicksand', sans-serif;
+        font-size: 5vw;
+        margin-bottom: 3vh;
+    }
+}
+
+.home-container {
+    margin-top: 15vh;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    height: 85vh;
+    overflow: hidden;
+}
+.home-page {
+    text-align: center;
+}
+.fishchowder {
+    position: absolute;
+    width: 60vw;
+    left: 20vw;
+    transition: all 0.2s ease-in-out;
+    z-index: 0;
+}
+.fishchowder:hover  {
+    opacity: 0.9;
+    width: 65vw;
+}
+.title {
+    width: 40vw;
+    position: absolute;
+    left: 30vw;
+    bottom: 0px;
+    z-index: 1;
+}
+
+@media (max-width: 800px) {
+    .fishchowder {
+        padding-top: 10vh;
+        width: 90vw;
+        left: 5vw;
+    }
+    .fishchowder:hover {
+        width: 95vw;
+    }
+    .title {
+        width: 60vw;
+        left: 20vw;
+    }
+}
+
+
+/*background*/
+.background {
+    background-image: url(/images/background-low-res.png);
+}
+
+
+
+
