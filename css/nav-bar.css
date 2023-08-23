@@ -1,31 +1,55 @@
 .nav-list {
+    object-position: center;
     text-align: center;
     position: absolute;
     top: 0;
     z-index: 20;
-    height: 12vh;
-    width: 100vw;
+    height: fit-content;
+    width: 130vw;
     background-color: rgba(81, 84, 101, 0.9);
     border-bottom: 6px double rgb(211, 194, 175);
 }
-.nav-list {
-
-    top: 0;
+.nav-list h2 {
+    margin-left: -30vw;
 }
 
 .nav-list h2 > a {
+    
     font-family: 'Gamja Flower', cursive;
     font-weight: bold;
+    font-size: 4vw;
     color: rgb(211, 194, 175);
 }
 
+@media (min-device-width: 501px) and (max-device-width: 850px){
+    .nav-list h2 > a {
+        font-size: 6vh;
+        }
+        .nav-list h2 {
+            margin-left: 0vw;
+        }
+}
+@media (max-device-width: 500px) {
+    .nav-list {
+        height: 20vh;
+    }
+    .nav-list h2 > a {
+    font-size: 12vw;
+    }
+    .nav-list h2 {
+        padding-top: 5vh;
+        margin-left: 0vw;
+    }
+
+}
+
+@media (max-width: 850px) {
+    .nav-list h2 > a {
+        font-size: 8vw;
+    }
+    
+}
 .nav-list h2 > a:hover, .nav-list h2 > a:active {
     color: rgb(189, 79, 0);
 }
 
-/*PHONE SETTINGS*/
-@media (max-width: 800px) {
-    .nav-list {
-        height: 10vh;
-    }
-}
