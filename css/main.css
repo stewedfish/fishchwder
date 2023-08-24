@@ -119,6 +119,7 @@ em {
     
 }
 
+
 .home-container {
     margin-top: 15vh;
     text-align: center;
@@ -290,7 +291,7 @@ em {
     .card {
         display: block;
         position: relative;
-        bottom: -120vh;
+        bottom: -100vh;
     }
 }
 @media (min-device-width: 850px) and (max-device-width: 1000px) and (orientation: landscape) {
@@ -300,6 +301,6 @@ em {
     .card {
         display: block;
         position: relative;
-        bottom: -120vh;
+        bottom: -100vh;
     }
 }
