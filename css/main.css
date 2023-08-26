@@ -2,7 +2,7 @@
 html {
     overflow-x: hidden;
 }
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, .table{
     font-family: 'Gamja Flower', cursive;
     color: rgb(81, 84, 101);
     margin-bottom: 3vh;
@@ -15,8 +15,8 @@ h2 {
     font-size: 6vw;
 
 }
-h3 {
-    font-size: 5vw;
+h3, .table {
+    font-size: 3vw;
 }
 p, a, li {
     font-family: 'Quicksand', sans-serif;
@@ -50,8 +50,8 @@ em {
         font-size: 6vh;
     
     }
-    h3 {
-        font-size: 3vh;
+    h3, .table {
+        font-size: 4vh;
     }
     p, a, li {
         font-family: 'Quicksand', sans-serif;
@@ -71,8 +71,8 @@ em {
         font-size: 9vh;
     
     }
-    h3 {
-        font-size: 3vh;
+    h3, .table {
+        font-size: 6vh;
     }
     p, a, li {
         font-family: 'Quicksand', sans-serif;
@@ -89,8 +89,8 @@ em {
         font-size: 9vh;
     
     }
-    h3 {
-        font-size: 3vh;
+    h3, .table {
+        font-size: 7vh;
     }
     p, a, li {
         font-family: 'Quicksand', sans-serif;
@@ -108,8 +108,8 @@ em {
         font-size: 6vh;
     
     }
-    h3 {
-        font-size: 3vh;
+    h3, .table {
+        font-size: 5vW;
     }
     p, a, li {
         font-family: 'Quicksand', sans-serif;

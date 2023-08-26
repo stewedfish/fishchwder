@@ -97,7 +97,7 @@
 /*pricing + examples*/
 .price-box {
     padding: 5vh 0 5vh 0;
-    width: 50vw;
+    width: 45vw;
     margin-left: auto;
     margin-right: auto;
     border-radius: 15px;
@@ -107,7 +107,18 @@
 .example {
     width: 20vw;
     display: inline;
+    border-radius: 25px;
+    box-shadow: 0 5px 5px 0;
+    opacity: 0.9;
 }
+.ex-long {
+    width: 40vw;
+}
+.em-ex {
+    opacity: 0.8;
+}
+
+
 .price-header {
     text-align: left;
     border-radius: 15px;
@@ -125,6 +136,7 @@
     margin-top: 5vh;      
 }
 
+
 @media (max-device-width: 500px) {
     .price-box {
         width: 100vw;
@@ -135,14 +147,20 @@
     .progress-bar {
         margin-bottom: 10vh;
     }
+    .ex-long {
+        width: 85vw;
+    }
 }
 
 @media (min-device-width: 501px) and (max-device-width: 850px){
     .price-box {
-        width: 110vw;
+        width: 100vw;
     }
     .example {
         width: 50vw;
+    }
+    .ex-long {
+        width: 90vw;
     }
     
 }
@@ -154,6 +172,9 @@
     .example {
         width: 40vw;
     }
+    .ex-long {
+        width: 65vw;
+    }
     
 }
 @media (min-device-width: 1001px) and (max-device-width: 1200px) and (orientation: landscape) {
@@ -162,10 +183,13 @@
         margin-left: 18vw;
     }
     .price-box {
-        width: 80vw;
+        width: 75vw;
     }
     .example {
         width: 40vw;
+    }
+    .ex-long {
+        width: 70vw;
     }
 
 }
@@ -195,8 +219,11 @@
 .artwork {
     margin-left: auto;
     margin-right: auto;
-    width: 50vw;
+    display: inline-block;
+    height: 25vw;
     margin-top: 3vh;
+    border-radius: 5px;
+    border: 3px double rgb(81, 84, 101);
 }
 .art-wrapper {
     margin-top: 0;
@@ -234,9 +261,12 @@
 .bio-art {
     max-width: 55vw;
     max-height: 40vh;
-    left: 3vw;
-    margin-top: 2vh;
-    margin-bottom: 2vh;
+    left: 5vw;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+    box-shadow: 0 15px 15px 0;
+    border-radius: 15px;
+    opacity: 0.8;
 }
 .about-para {
     background-color: rgba(151, 156, 186, 0.4);
@@ -248,7 +278,8 @@
 
 @media (max-device-width: 500px) {
     .artwork {
-        width: 100vw;
+        width: auto;
+        height: 25vh;
     }
     .bottom-list {
         margin-top: 0;
@@ -259,7 +290,8 @@
 
 @media (min-device-width: 501px) and (max-device-width: 850px){
     .artwork {
-        width: 100vw;
+        width: auto;
+        height: 40vh;
     }
     .bottom-list {
         margin-top: -4vh;
@@ -270,7 +302,8 @@
 
 @media (max-width: 850px) {
     .artwork {
-        width: 75vw;
+        width: auto;
+        height: 40vw;
     }
     .bottom-list {
         margin-top: -2vh;
@@ -279,10 +312,95 @@
 }
 @media (min-device-width: 1001px) and (max-device-width: 1200px) and (orientation: landscape) {
     .artwork {
-        width: 80vw;
+        width: auto;
+        height: 40vw;
     }
     .bottom-list {
         margin-top: -3vh;
         margin-bottom: 5vh;
+    }
+}
+
+.table {
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 3vh;
+    padding-right: 1vw;
+    padding-left: 1vw;
+    width: 40vw;
+    margin-top: 5vh;
+    border: 3px solid rgb(81, 84, 101);
+    border-radius: 15px;
+    background-color: rgba(151, 156, 186, 0.4);
+}
+
+th, tr {
+    width: 20vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+th {
+    padding-top: 3vh;
+    text-align: center;
+}
+
+.table-list {
+    list-style: none;
+    margin-left: -10vw;
+    margin-top: 3vh;
+}
+
+
+@media (max-device-width: 500px) {
+    .table {
+        width: 90vw;
+    }
+    tr, th {
+        width: 45vw;
+    }
+}
+
+
+
+@media (min-device-width: 501px) and (max-device-width: 850px){
+    .table {
+        width: 90vw;
+    }
+    tr, th {
+        width: 45vw;
+    }
+}
+
+@media (max-width: 850px) {
+    .table {
+        width: 60vw;
+    }
+    tr, th {
+        width: 30vw;
+    }
+}
+
+@media (min-device-width: 850px) and (max-device-width: 1000px) and (orientation: landscape) {
+    .table {
+        width: 45vw;
+    }
+    tr, th {
+        width: 22.5vw;
+    }
+}
+@media  (max-device-width: 849px) and (orientation: landscape) {
+    .table {
+        width: 80vw;
+    }
+    tr, th {
+        width: 40vw;
+    }
+}
+@media (min-device-width: 1001px) and (max-device-width: 1200px) and (orientation: landscape) {
+    .table {
+        width: 70vw;
+    }
+    tr, th {
+        width: 35vw;
     }
 }
